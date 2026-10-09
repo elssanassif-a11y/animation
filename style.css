@@ -1,0 +1,77 @@
+
+
+#bgimage{
+    position: relative;
+    object-fit: cover;
+    z-index: -1;
+    
+}
+#hammer{
+    position: absolute;
+    
+    z-index: 2;
+    animation-name: hammeranimation;
+    animation-duration: 2s;
+    
+    animation-iteration-count: infinite;
+    
+
+}
+@keyframes hammeranimation{
+    from{ 
+        left: 10px;
+    bottom: 20%;
+    }
+    to {
+        left: 30px;
+    bottom: -20%;
+
+    }
+}
+#mouse{
+    position: absolute;
+    z-index: 2;
+    
+    animation-name: mouseanimation;
+    animation-duration: 0.5s;
+    
+    animation-iteration-count: infinite;
+}
+@keyframes mouseanimation{
+    from{ 
+        right: 50%;
+    bottom: -22%;
+    }
+    to {
+        right: 50%;
+        bottom: -50%;
+
+    } }
+#bee{
+    
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 40%;
+     
+}
+#duck{
+     position: absolute;
+    z-index: 2;
+right: 5%;
+     animation-name: duck;
+    animation-duration: 1s;
+    
+    animation-iteration-count: infinite;
+}
+@keyframes duck{
+    from{ 
+    top: 15%;
+        
+    }
+    to {
+        top:1%
+       
+
+
+    } }
